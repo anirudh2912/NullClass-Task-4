@@ -1,0 +1,26 @@
+Multilingual Medical Q&A Chatbot
+
+Multilingual Medical Q&A Chatbot is a Streamlit-based application that answers medical questions using the MedQuAD dataset. It detects the language of the user’s input and can translate non-English questions to English for improved search accuracy.
+
+Features:
+
+1.Multilingual support with language detection.
+2.Uses the MedQuAD dataset for medical Q&A.
+3.Translates non-English questions to English.
+4.Cleans and processes text to improve search performance.
+5.Supports translation between English, Spanish, French, and German.
+
+Prerequisites:
+
+1.Install the required libraries:
+pip install streamlit pandas transformers langdetect nltk
+
+2.Download the necessary NLTK resources:
+python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
+
+3.Update the CSV and TXT file paths in the load_medquad_dataset() function to point to your local MedQuAD files.
+
+Running the App
+
+1.Run the Streamlit application
+2.Interact with the app by asking medical questions in multiple languages. If no relevant answers are found, the question is translated into English and searched again.
